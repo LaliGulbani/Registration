@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new EndpointsAsyncTask().execute(new Pair<Context, String>(MainActivity.this, "Lali"));
+               // new EndpointsAsyncTask().execute(new Pair<Context, String>(MainActivity.this, "Lali"));
+                new EndpointsAsyncTask().execute((Runnable) MainActivity.this);
             }
         });
     }
